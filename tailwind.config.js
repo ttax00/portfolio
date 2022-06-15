@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  variants: {
+    animation: ["motion-safe"]
+  },
   plugins: [
     require('tw-elements/dist/plugin')
   ],
