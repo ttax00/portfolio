@@ -13,7 +13,7 @@ export default function Introduction() {
 				</p>
 				<p className="motion-safe:animation delay-2s fade-in text-left mt-4 text-sm md:text-xl">
 					I primary work on curious bite-sized projects, with more emphasis on discovery and understanding.
-					Currently I'm on my journey to learn <a href="https://www.rust-lang.org/" className="text-blue-600 font-bold dark:text-red-700">Rust</a>.
+					Currently making an effort to learn <a href="https://www.rust-lang.org/" className="text-blue-600 font-bold dark:text-red-700">Rust</a>.
 				</p>
 				<div className="motion-safe:animation delay-3s fade-in self-start mt-8">
 					<a className="btn-primary block motion-safe:animation delay-4s animate-bounce" href="https://github.com/TechTheAwesome">
