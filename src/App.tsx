@@ -8,7 +8,7 @@ function App() {
       <main className="flex flex-col bg-gradient-to-br from-slate-100 to-slate-400 dark:from-slate-600 dark:to-red-900">
         <Introduction />
       </main>
-
+      <footer className="text-center text-black dark:text-white bg-gray-500 dark:bg-gray-800 pb-8 pt-6">Designed & Built by TechTheAwesome</footer>
     </>
   );
 }
