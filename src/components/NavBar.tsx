@@ -13,7 +13,7 @@ export default function NavBar() {
   }, [dark])
   
 	return (
-		<header className="absolute w-screen bg-gray-500 dark:bg-gray-800">
+		<header className="fixed z-10 w-screen bg-gray-500 dark:bg-gray-800">
 			<nav className="mx-auto px-2 sm:px-6 lg:px-8 grid grid-cols-3 gap-2">
 				<div className="relative flex items-center justify-start h-16 col-span-2">
 					<div className="text-black dark:text-white">Portfolio</div>
