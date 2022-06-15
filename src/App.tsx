@@ -10,31 +10,59 @@ function App() {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-600">
-      <nav className="bg-gray-500 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 grid grid-cols-3 gap-2">
-          <div className="relative flex items-center justify-between h-16 col-span-2">
+    <>
+      <header className="absolute w-screen bg-gray-500 dark:bg-gray-800">
+        <nav className="mx-auto px-2 sm:px-6 lg:px-8 grid grid-cols-3 gap-2">
+          <div className="relative flex items-center justify-start h-16 col-span-2">
             <div className="text-black dark:text-white">Portfolio</div>
-            <button className="btn-primary">Test1</button>
-            <button className="btn-primary">Test2</button>
-            <button className="btn-primary">Test3</button>
-            <button className="btn-primary">Test4</button>
+            <div className="form-check form-switch ml-8">
+              <input id="toggle-darkmode" className="element-toggle" type="checkbox" role="switch" defaultChecked={dark} onChange={(e) => {
+                setDark(!dark);
+              }} />
+              <label htmlFor="toggle-darkmode" className="text-black dark:text-white">darkmode</label>
+            </div>
           </div>
-          <div className="relative flex items-center justify-end h-16">
+          <div className="relative flex items-center justify-end h-16 text-black dark:text-white">
             <div>Made With</div>
             <span>React</span>
             <span>Typescript</span>
           </div>
-        </div>
-      </nav>
-      <header>
-        Hello World
-        <br />
-        <br />
-        <button onClick={() => setDark(!dark)} className="btn-primary animate-bounce">Toggle</button>
+        </nav>
       </header>
-    </div>
+      <main className="flex flex-col bg-gradient-to-br from-slate-100 to-slate-400 dark:from-slate-600 dark:to-red-900">
+        <section id="introducton" className="section-commons px-8 sm:px-12 lg:px-32 flex flex-col justify-center content-start">
+          <p className="text-left mt-16 text-xl max-w-4xl">
+            <span className="transition duration-100 fade-in text-3xl sm:text-5xl  md:text-7xl text-red-700">
+              Welcome, I'm Tech.
+            </span>
+            <br />
+            <span className="md:text-4xl">
+              A multi-lingual, multi-disciplined, self-taught hobbyist developer.
+            </span>
+          </p>
+          <p className="text-left mt-4 text-sm md:text-xl max-w-4xl">
+              I primary work on curious bite-sized projects, with more emphasis on discovery and understanding. Currently I'm on my journey to learn Rust.
+          </p>
+          <a className="btn-primary self-start mt-8" href="https://github.com/TechTheAwesome">Checkout my projects on github!</a>
+        </section>
+        <section id="about-me" className="section-commons">
+          <span className="text-center mt-16">
+            <h1 className=" text-3xl">
+              Hi there!
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing
+            </h1>
+          </span>
+        </section>
+        <section id="project-1" className="section-commons">
+
+        </section>
+      </main>
+
+    </>
   );
 }
 
 export default App;
+
+
