@@ -8,7 +8,7 @@ export default function Introduction() {
 					</span>
 					<br />
 					<span className="motion-safe:animation delay-1s fade-in md:text-4xl">
-						A multi-lingual, multi-disciplined, self-taught hobbyist developer.
+						A multi-lingual, multi-disciplinary, self-taught hobbyist developer.
 					</span>
 				</p>
 				<p className="motion-safe:animation delay-2s fade-in text-left mt-4 text-sm md:text-xl">
