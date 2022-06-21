@@ -20,12 +20,12 @@ export default function Introduction() {
 						Checkout my projects on github!
 					</a>
 				</div>
-			</div>
-			<div className="absolute self-end place-self-center motion-safe:animation delay-3s fade-in">
-				<a href="#technologies">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg" 
-					className="h-24 w-24" alt="scroll down" />
-				</a>
+				<div className="self-center motion-safe:animation delay-3s fade-in">
+					<a href="#technologies">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg"
+							className="h-24 w-24" alt="scroll down" />
+					</a>
+				</div>
 			</div>
 		</section>
 	)
